@@ -2,12 +2,12 @@ import { ConnectButton, connectorsForWallets, } from '@rainbow-me/rainbowkit';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import { useAccount, useWriteContract, useReadContract } from 'wagmi';
+import { useAccount } from 'wagmi';
 import { Address } from 'viem'
 import React, { useEffect, useState, useRef } from 'react';
 import Image from 'next/image'
 import Web3 from 'web3';
-import { abi, wagmiContractConfig } from './abi';
+import { abi, wagmiContractConfig } from '../utils/abi';
 import { NextResponse } from 'next/server';
 
 const Home: NextPage = () => {
