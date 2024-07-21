@@ -18,7 +18,7 @@ const moonbasealpha = {
     default: { http: ['https://rpc.testnet.moonbeam.network'] },
   },
   blockExplorers: {
-    default: { name: 'Explorer', url: 'http://localhost' },
+    default: { name: 'Explorer', url: 'https://moonbase.moonscan.io/' },
   },
 } as const satisfies Chain;
 
