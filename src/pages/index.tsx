@@ -568,8 +568,8 @@ const Home: NextPage = () => {
       <footer className={styles.footer}>
         Powered by
         <Image src={`/assets/Polkadot-Logo.png`} alt="Polkadot Logo" width="140" height="64" className={styles.imageStyle} />
-        and
         <Image src={`/assets/moonbeam-logo.png`} alt="Moonbeam Logo" width="64" height="64" className={styles.imageStyle} />
+        <Image src={`/assets/drpc.png`} alt="dRPC Logo" width="100" height="64" className={styles.imageStyle} />
       </footer>
     </div >
   );

@@ -84,14 +84,10 @@ contract OnlineStore {
         uint256 totalPrice = product.price * _quantity;
         require(msg.value >= totalPrice, "Insufficient funds sent");
         product.stock -= _quantity;
-        // Transfer funds to admin or store's wallet
         payable(admin).transfer(totalPrice);
-        // Refund any excess funds sent
         if (msg.value > totalPrice) {
             payable(msg.sender).transfer(msg.value - totalPrice);
         }
-        // Emit an event for the purchase (event not defined in this snippet)
     }
 
-    // Additional functions and events can be added as per requirements.
 }
