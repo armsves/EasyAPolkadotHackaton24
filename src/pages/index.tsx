@@ -9,7 +9,6 @@ import Image from 'next/image'
 import Web3 from 'web3';
 import { abi, wagmiContractConfig } from './abi';
 import { NextResponse } from 'next/server';
-import { createPermissionedGenericDepositData } from '@buildwithsygma/sygma-sdk-core';
 
 const Home: NextPage = () => {
   const { address } = useAccount();
